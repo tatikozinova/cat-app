@@ -8,12 +8,8 @@ function App() {
  
 
  const[showMore, setShowMore]=useState(false);
-  const[showText, setShowText]=useState(false);
+ const[showText, setShowText]=useState(false);
 
- const showTextClick=(element)=>{
-  element.showMore=!element.showMore
-  setShowText(!showText)
- }
 
  const previousCat=()=>{
   setCat((cat=>{
@@ -53,7 +49,7 @@ return (<div>
   </div>
 
   <div className='container'>
-      <p>{showMore ? description : description.substring(0,40)+'...'}<button onClick={()=>showTextClick(element)}>{showMore ? 'Show less' : 'Show more'}</button></p>
+      <p>{showMore ? description : description.substring(0,40)+'...'}<button className='showMore' onClick={()=>setShowMore(!showMore)}>{showMore ? 'Show less' : 'Show more'}</button></p>
     </div>
 
 

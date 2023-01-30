@@ -41,5 +41,8 @@ button {
 }
 
 .showMore{
-  background-color: #FFFFE8;
+  background-color:#FFB26B ;
+  opacity: 0.7;
+  color: black;
+  border-radius: 50px;
 }
